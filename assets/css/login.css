@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background: url(/assets/images/login_bg.jpg);
+  background-size: cover;
+}
+.loginAndRegi .layui-main {
+  margin-top: 20px;
+}
+/* ------------------------------登录界面 ----------------------------*/
+.loginAndRegi {
+  width: 400px;
+  height: 310px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginAndRegi .title {
+  height: 60px;
+  background: url(/assets/images/login_title.png) no-repeat center;
+}
+/* ------------------------------去登录界面- */
+.layui-form {
+  padding: 0 30px;
+}
+.loginBox a,
+.regiBox a {
+  float: right;
+}
+/* ----------------------------------去注册界面 */
+.regiBox {
+  display: none;
+}
+.layui-form-item {
+  position: relative;
+}
+.layui-form-item i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.layui-input {
+  padding-left: 30px;
+}
+/* 登录注册----------------------------调用接口发送注册用户的请求 */
