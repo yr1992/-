@@ -69,7 +69,7 @@ $(function(){
        console.log(res);
       if (res.data.status!==0) {
         //   登录失败
-        layer.msg(res.data.msg)
+        return layer.msg(res.data.message)
       }
        //登录成功
 
