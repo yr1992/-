@@ -1,18 +1,18 @@
 //处理头像和昵称
 function getUserInfo() {
   axios.get("/my/userinfo").then((res) => {
-    console.log(res);
+    // console.log(res);
     let name = res.data.data.nickname || res.data.data.username;
     
     $("#welcome").text("欢迎 " + name);
     if (res.data.data.user_pic) {
       $(".layui-nav-img").attr("src", res.data.data.user_pic);
       $(".layui-nav-img").show();
-      $(".text-avatar").hide();
+      $(".text_avatar").hide();
     } else {
       let w = name[0].toUpperCase();
       
-      console.log(w);
+      // console.log(w);s
       $(".layui-nav-img").hide();
       $(".text_avatar").text(w).show();
     }
